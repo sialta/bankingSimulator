@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<project name="Mobile Banking Web Build Script" default="default" basedir=".">
+
+	<!-- =================================
+	      SY Ant Build Version 1.0.1  Date: 2011-05-20
+	      This file is Standard ant file for all project.
+	      1- You need to replae project name and verison in build.properties
+	      2- Every project has its own specifc circumestances
+
+
+          Here is Dirsctory Struction of Build Process
+          prj: src: contians sources
+              db: contains db files
+              web: contains web files
+              ...
+              ...
+              build: temprory is used for building
+              dist: contais release.
+
+
+           Any comment, email to web-dev@sefr-yek.com
+           Note: Tags which are staring with - are internal tags and you cannot call them.
+           Call default to see avaiable targets.
+         ================================= -->
+	<property file="build.properties"/>
+	<property name="project.name" value="${project.name}"/>
+
+	<property name="project.name.dev" value="${project.name}dev"/>
+	<property name="project.name.test" value="${project.name}test"/>
+	<property name="project.name.prod" value="${project.name}prod"/>
+
+	<import file="build_info.xml"/>
+	<import file="build-code-analysis.xml"/>
+
+	<property name="src.dir" value="src"/>
+	<property name="web.dir" value="web"/>
+	<property name="web.webinf.dir" value="${web.dir}/WEB-INF"/>
+	<property name="web.webinf.lib.dir" value="${web.webinf.dir}/lib"/>
+	<property name="web.webinf.classes.dir" value="${web.webinf.dir}/classes"/>
+
+	<property name="db.dir" value="db"/>
+
+	<property name="build.dir" value="../build"/>
+	<property name="dist.dir" value="../dist"/>
+	<property name="dist.web.dir" value="../dist/web"/>
+
+
+    <tstamp>
+        <format property="dir.now" pattern="yyyyMMdd_HHmm"/>
+    </tstamp>
+
+	<path id="libs.classpath">
+		<fileset dir="${web.webinf.lib.dir}">
+			<include name="**/*.jar"/>
+			<include name="**/*.zip"/>
+		</fileset>
+		<fileset dir="ext-lib">
+			<include name="**/*.jar"/>
+			<include name="**/*.zip"/>
+		</fileset>
+	</path>
+
+    <target name="default" depends="">
+        <echo message="here are options: "/>
+        <echo message=" ant release-prod-major "/>
+        <echo message=" ant release-prod-minor "/>
+        <echo message=" ant release-prod-revision "/>
+        <echo message=" ant release-prod-build "/>
+        <echo message=" ant release-test-major "/>
+        <echo message=" ant release-test-minor "/>
+        <echo message=" ant release-test-revision "/>
+        <echo message=" ant release-test-build "/>
+        <echo message=" ant create-schema-dev "/>
+        <echo message=" ant create-schema-test "/>
+        <echo message=" ant create-schema-prod "/>
+        <echo message=" ant -Dsqlfilename=YourFileInDb.sql run-sql-dev "/>
+        <echo message=" ant -Dsqlfilename=YourFileInDb.sql run-sql-test "/>
+        <echo message=" ant -Dsqlfilename=YourFileInDb.sql run-sql-prod "/>
+        <echo message=" ant analysis-code"/>
+        <echo message=" ant checkstyle"/>
+        <echo message=" ant findbugs"/>
+    </target>
+
+    <target name="clean" depends="dir.check" if="dir.exists">
+        <echo message="backup dist, and delete build direcories"/>
+
+        <delete dir="${build.dir}"/>
+        <mkdir dir="${dist.dir}.${dir.now}"/>
+        <copy todir="${dist.dir}.${dir.now}" overwrite="true">
+            <fileset dir="${dist.dir}" includes="**/*.*"/>
+        </copy>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+
+    <target name="dir.check">
+        <condition property="dir.exists">
+            <available file="${dist.dir}" type="dir"/>
+        </condition>
+    </target>
+
+	<target name="-init-build">
+		<echo message="Copying required resources to build folder for making project jar file" />
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.dir}/classes"/>
+		<copy todir= "${build.dir}/classes" overwrite="true">
+			<fileset dir="${src.dir}" includes="**/*.hbm.xml, **/*.properties"/>
+		</copy>
+	</target>
+
+	<target name="-compile" depends="-init-build" description="">
+		<echo message="Compiling Source Files to build/classes" />
+		<javac srcdir="${src.dir}" destdir="${build.dir}/classes" debug="true" debuglevel="lines, source">
+			<compilerarg value="-Xlint"/>
+            <classpath refid="libs.classpath"/>
+        </javac>
+	</target>
+
+	<target name="-build-prj-jar" depends="-compile" description="">
+		<echo message="Making Project Jar File from build" />
+		<mkdir dir="${dist.dir}"/>
+		<jar destfile="${dist.dir}/${project.name}.jar"
+             basedir="${build.dir}/classes/"
+             includes="com/**, org/**, freemarker/**, *.properties"
+        	 excludes="log4j.properties" >
+		</jar>
+	</target>
+
+
+	<target name="-prepare-dist-env" depends="clean" description="">
+		<echo message="Preparing dist folder for Release" />
+		<mkdir dir="${dist.web.dir}"/>
+		<copy todir= "${dist.web.dir}" overwrite="true" includeemptydirs="true" >
+			<fileset dir="${web.dir}" includes="**/*.*"  excludes="**/*.class, **/.svn/**"/>
+		</copy>
+		<copy todir="${dist.dir}/${web.webinf.classes.dir}" >
+		        <fileset dir="${src.dir}" includes="freemarker/**, *.xml, *.properties"  excludes="**/.svn/**"/>
+		</copy>
+		<copy todir="${dist.dir}/${db.dir}" >
+		        <fileset dir="${db.dir}" includes="**/*.*"  excludes="**/.svn/**"/>
+		</copy>
+	</target>
+
+	<target name="release-prod-major" depends="mark-major, -release-prod">
+		<echo message="Releasing ..." />
+	</target>
+	<target name="release-prod-minor" depends="mark-minor, -release-prod">
+		<echo message="Releasing ..." />
+	</target>
+	<target name="release-prod-revision" depends="mark-revision, -release-prod">
+		<echo message="Releasing ..." />
+	</target>
+	<target name="release-prod-build" depends="mark-build, -release-prod">
+		<echo message="Releasing ..." />
+	</target>
+
+	<target name="-release-prod" depends=" -prepare-dist-env, -prepare-prod, -build-release">
+		<echo message="" />
+	</target>
+
+	<target name="release-test-major" depends="mark-major, -release-test">
+		<echo message="Releasing ..." />
+	</target>
+	<target name="release-test-minor" depends="mark-minor, -release-test">
+		<echo message="Releasing ..." />
+	</target>
+	<target name="release-test-revision" depends="mark-revision, -release-test">
+		<echo message="Releasing ..." />
+	</target>
+	<target name="release-test-build" depends="mark-build, -release-test">
+		<echo message="Releasing ..." />
+	</target>
+	<target name="-release-test" depends="-prepare-dist-env, -prepare-test, -build-release">
+		<echo message="Releasing ..." />
+	</target>
+
+
+	<target name="-build-release" depends="-build-prj-jar">
+		<echo message="" />
+		<copy todir="${dist.dir}/${web.webinf.lib.dir}" >
+			<fileset dir="${dist.dir}" includes="${project.name}.jar" />
+		</copy>
+	</target>
+
+	<target name="-prepare-prod">
+		<echo message="Preparing Files for Production Env" />
+		<echo message="You Need To Fill This Section Based on the Project" />
+
+	</target>
+
+	<target name="-prepare-test">
+		<echo message="Preparing Files for Test Env" />
+		<echo message="You Need To Fill This Section Based on the Project" />
+
+	</target>
+
+	<target name="test" depends="" description="">
+		<echo message="You can use this target for debug purpose" />
+    </target>
+
+
+    <property name="db.path" value="db"/>
+
+    <target name="create-schema">
+        <property name="env.type" value="DEV"/>
+
+        <echo message=" ${env.type}"/>
+        <property file="${db.path}/db-${env.type}-config.properties"/>
+        <echo message=" url ${jdbc.url.db}/${jdbc.username}"/>
+
+        <antcall target="dump-database"/>
+
+        <sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${db.root.username}"
+             password="${db.root.password}"
+             classpathref="libs.classpath">
+            GRANT SELECT,INSERT,UPDATE,DELETE,INDEX,ALTER,CREATE,DROP ON ${jdbc.database}.*  TO '${jdbc.username}'@'localhost' IDENTIFIED BY '${jdbc.password}';
+         </sql>
+
+        <sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}"
+             password="${jdbc.password}"
+             classpathref="libs.classpath">
+            DROP DATABASE IF EXISTS ${jdbc.database};
+            CREATE DATABASE IF NOT EXISTS ${jdbc.database} DEFAULT CHARACTER SET utf8;
+        </sql>
+        <sql driver="${jdbc.driver}" url="${jdbc.url.db}" userid="${jdbc.username}"
+             password="${jdbc.password}"
+             classpathref="libs.classpath">
+            <transaction src="${db.path}/ALL-schema.sql"/>
+            <transaction src="${db.path}/ALL-seed-data.sql"/>
+            <transaction src="${db.path}/${env.type}-data.sql"/>
+        </sql>
+    </target>
+
+    <target name="create-schema-dev">
+        <property name="env.type" value="DEV"/>
+        <antcall target="create-schema"/>
+    </target>
+
+    <target name="create-schema-test">
+        <property name="env.type" value="TEST"/>
+        <antcall target="create-schema"/>
+    </target>
+
+    <target name="create-schema-prod">
+        <property name="env.type" value="PROD"/>
+        <antcall target="create-schema"/>
+    </target>
+
+
+    <target name="run-sql">
+        <property name="env.type" value="DEV"/>
+
+        <echo message=" ${env.type}"/>
+        <property file="${db.path}/db-${env.type}-config.properties"/>
+        <echo message=" url ${jdbc.url.db}/${jdbc.username}"/>
+
+        <!--<antcall target="dump-database"/>-->
+        <sql driver="${jdbc.driver}" url="${jdbc.url.db}" userid="${jdbc.username}"
+             password="${jdbc.password}"
+             classpathref="libs.classpath">
+            <transaction src="${db.path}/${sqlfilename}"/>
+        </sql>
+    </target>
+
+    <target name="run-sql-dev">
+        <property name="env.type" value="DEV"/>
+        <antcall target="run-sql"/>
+    </target>
+
+    <target name="run-sql-test">
+        <property name="env.type" value="TEST"/>
+        <antcall target="run-sql"/>
+    </target>
+
+    <target name="run-sql-prod">
+        <property name="env.type" value="PROD"/>
+        <antcall target="run-sql"/>
+    </target>
+
+    <target name="dump-database">
+        <echo message="starting database dump..."/>
+        <property name="outputpath" value="${backup.output}"/>
+        <mkdir dir="${outputpath}"/>
+        <property name="outputfile" value="${backup.output}${jdbc.database}-${dir.now}.sql"/>
+
+        <exec executable="mysqldump" output="${outputfile}">
+            <arg value="--user=${db.root.username}"/>
+            <arg value="--password=${db.root.password}"/>
+            <arg value="--host=${jdbc.host}"/>
+            <arg value="--port=${jdbc.port}"/>
+            <arg value="${jdbc.database}"/>
+        </exec>
+         
+        <loadfile srcfile="${outputfile}" property="dump.error">
+            <filterchain>
+                <filterreader classname="org.apache.tools.ant.filters.LineContains">
+                    <param type="contains" value="mysqldump: Got error:"/>
+                </filterreader>
+            </filterchain>
+        </loadfile>
+        <property name="dump.error" value="dump-database ${outputfile}"/>
+
+        <echo message="${dump.error}"/>
+    </target>
+
+</project>

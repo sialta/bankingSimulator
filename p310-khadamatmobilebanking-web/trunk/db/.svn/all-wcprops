@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/p310-khadamatmobilebanking-web/!svn/ver/35/trunk/db
+END
+PROD-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/p310-khadamatmobilebanking-web/!svn/ver/26/trunk/db/PROD-data.sql
+END
+DEV-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/p310-khadamatmobilebanking-web/!svn/ver/25/trunk/db/DEV-data.sql
+END
+db-TEST-config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/p310-khadamatmobilebanking-web/!svn/ver/30/trunk/db/db-TEST-config.properties
+END
+TEST-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/p310-khadamatmobilebanking-web/!svn/ver/27/trunk/db/TEST-data.sql
+END
+db-DEV-config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/p310-khadamatmobilebanking-web/!svn/ver/30/trunk/db/db-DEV-config.properties
+END
+db-PROD-config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/p310-khadamatmobilebanking-web/!svn/ver/35/trunk/db/db-PROD-config.properties
+END
+ALL-seed-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/p310-khadamatmobilebanking-web/!svn/ver/21/trunk/db/ALL-seed-data.sql
+END
+ALL-schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/p310-khadamatmobilebanking-web/!svn/ver/30/trunk/db/ALL-schema.sql
+END

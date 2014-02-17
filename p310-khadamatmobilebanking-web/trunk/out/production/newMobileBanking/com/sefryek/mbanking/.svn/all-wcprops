@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking
+END
+ServiceListUpdateImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/ServiceListUpdateImpl.class
+END
+ServiceListUpdate.class
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/ServiceListUpdate.class
+END
+DefaultAccountServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/DefaultAccountServiceImpl.class
+END
+DefaultAccountService.class
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/DefaultAccountService.class
+END
+ServiceHandler_.class
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/ServiceHandler_.class
+END
+AddToSimcardServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/AddToSimcardServiceImpl.class
+END
+AddToSimcardService.class
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/AddToSimcardService.class
+END
+BillPaymentWithAccountSt2ServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/BillPaymentWithAccountSt2ServiceImpl.class
+END
+BillPaymentWithAccountSt2Service.class
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/BillPaymentWithAccountSt2Service.class
+END
+AccountPinServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/AccountPinServiceImpl.class
+END
+AccountPinService.class
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/AccountPinService.class
+END
+ChangePinService.class
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/ChangePinService.class
+END
+ChangePinServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/ChangePinServiceImpl.class
+END
+UpdateAccountServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/UpdateAccountServiceImpl.class
+END
+UpdateAccountService.class
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/UpdateAccountService.class
+END
+TransferToOtherAccountServiceImplStep1.class
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/TransferToOtherAccountServiceImplStep1.class
+END
+TransferToOtherAccountServiceStep1.class
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/TransferToOtherAccountServiceStep1.class
+END
+TransferBetweenBanksServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/TransferBetweenBanksServiceImpl.class
+END
+TransferBetweenBanksService.class
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/TransferBetweenBanksService.class
+END
+ShebaNumberService.class
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/ShebaNumberService.class
+END
+ShebaNumberServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/ShebaNumberServiceImpl.class
+END
+TransferSelfAccountServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/TransferSelfAccountServiceImpl.class
+END
+TransferSelfAccountService.class
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/TransferSelfAccountService.class
+END
+AccountBalanceServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/AccountBalanceServiceImpl.class
+END
+RemoveOnewayServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/RemoveOnewayServiceImpl.class
+END
+RemoveOnewayService.class
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/RemoveOnewayService.class
+END
+AddAccountServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/AddAccountServiceImpl.class
+END
+AddAccountService.class
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/AddAccountService.class
+END
+AddOnewayServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/AddOnewayServiceImpl.class
+END
+AddOnewayService.class
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/AddOnewayService.class
+END
+BillPaymentWithAccountSt1ServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/BillPaymentWithAccountSt1ServiceImpl.class
+END
+BillPaymentWithAccountSt1Service.class
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/BillPaymentWithAccountSt1Service.class
+END
+DeleteAccountServiceImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/DeleteAccountServiceImpl.class
+END
+DeleteAccountService.class
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/DeleteAccountService.class
+END
+ServiceHandler.class
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/p310-khadamatmobilebanking-web/!svn/ver/15/trunk/out/production/newMobileBanking/com/sefryek/mbanking/ServiceHandler.class
+END

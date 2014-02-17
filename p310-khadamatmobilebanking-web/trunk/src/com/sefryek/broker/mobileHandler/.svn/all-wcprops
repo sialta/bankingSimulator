@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/p310-khadamatmobilebanking-web/!svn/ver/48/trunk/src/com/sefryek/broker/mobileHandler
+END
+AccountServiceHandler_.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/p310-khadamatmobilebanking-web/!svn/ver/48/trunk/src/com/sefryek/broker/mobileHandler/AccountServiceHandler_.java
+END
+CheckHandler_.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/p310-khadamatmobilebanking-web/!svn/ver/48/trunk/src/com/sefryek/broker/mobileHandler/CheckHandler_.java
+END
+IOConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/broker/mobileHandler/IOConstant.java
+END
+ServiceHandler_.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/p310-khadamatmobilebanking-web/!svn/ver/35/trunk/src/com/sefryek/broker/mobileHandler/ServiceHandler_.java
+END
+MIDletHandler_.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/p310-khadamatmobilebanking-web/!svn/ver/46/trunk/src/com/sefryek/broker/mobileHandler/MIDletHandler_.java
+END
+MIDletConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/p310-khadamatmobilebanking-web/!svn/ver/48/trunk/src/com/sefryek/broker/mobileHandler/MIDletConstant.java
+END
+CardHandler_.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/p310-khadamatmobilebanking-web/!svn/ver/48/trunk/src/com/sefryek/broker/mobileHandler/CardHandler_.java
+END

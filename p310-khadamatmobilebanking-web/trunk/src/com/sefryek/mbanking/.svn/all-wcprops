@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/p310-khadamatmobilebanking-web/!svn/ver/35/trunk/src/com/sefryek/mbanking
+END
+ChangePinServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/ChangePinServiceImpl.java
+END
+ChangePinService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/ChangePinService.java
+END
+BillPaymentWithAccountSt1ServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/BillPaymentWithAccountSt1ServiceImpl.java
+END
+BillPaymentWithAccountSt1Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/BillPaymentWithAccountSt1Service.java
+END
+BillPaymentWithAccountSt2ServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/BillPaymentWithAccountSt2ServiceImpl.java
+END
+BillPaymentWithAccountSt2Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/BillPaymentWithAccountSt2Service.java
+END
+AddOnewayServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/AddOnewayServiceImpl.java
+END
+AddOnewayService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/AddOnewayService.java
+END
+AddToSimcardServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/AddToSimcardServiceImpl.java
+END
+AddToSimcardService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/AddToSimcardService.java
+END
+ServiceHandler_.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/ServiceHandler_.java
+END
+AddAccountServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/AddAccountServiceImpl.java
+END
+AddAccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/AddAccountService.java
+END
+TransferSelfAccountServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/TransferSelfAccountServiceImpl.java
+END
+TransferSelfAccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/TransferSelfAccountService.java
+END
+ShebaNumberService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/ShebaNumberService.java
+END
+ShebaNumberServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/ShebaNumberServiceImpl.java
+END
+ServiceListUpdateImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/ServiceListUpdateImpl.java
+END
+ServiceListUpdate.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/ServiceListUpdate.java
+END
+TransferBetweenBanksServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/TransferBetweenBanksServiceImpl.java
+END
+TransferBetweenBanksService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/TransferBetweenBanksService.java
+END
+TransferToOtherAccountServiceStep1.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/TransferToOtherAccountServiceStep1.java
+END
+TransferToOtherAccountServiceImplStep1.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/TransferToOtherAccountServiceImplStep1.java
+END
+UpdateAccountServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/UpdateAccountServiceImpl.java
+END
+UpdateAccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/UpdateAccountService.java
+END
+AccountPinServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/AccountPinServiceImpl.java
+END
+AccountPinService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/AccountPinService.java
+END
+DefaultAccountServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/DefaultAccountServiceImpl.java
+END
+DefaultAccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/DefaultAccountService.java
+END
+RemoveOnewayServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/RemoveOnewayServiceImpl.java
+END
+RemoveOnewayService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/RemoveOnewayService.java
+END
+AccountBalanceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/AccountBalanceServiceImpl.java
+END
+ServiceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/ServiceHandler.java
+END
+DeleteAccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/DeleteAccountService.java
+END
+DeleteAccountServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/DeleteAccountServiceImpl.java
+END

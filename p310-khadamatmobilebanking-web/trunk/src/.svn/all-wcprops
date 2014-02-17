@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/p310-khadamatmobilebanking-web/!svn/ver/49/trunk/src
+END
+servicesType.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/p310-khadamatmobilebanking-web/!svn/ver/47/trunk/src/servicesType.properties
+END
+log4j-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/log4j-config.xml
+END
+trunk.iml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/trunk.iml
+END

@@ -1,0 +1,15 @@
+addNewAccount=1
+deleteAccount=1
+updateAccount=1
+accountBalance=1
+accountPin=1
+billPayAccF1=1
+billPayAccF2=1
+getSheba=1
+addService=1
+removeService=1
+updateList=1
+transferToOtherSt1=1
+addToSimcard=1
+defaultAccount=1
+changePin=1

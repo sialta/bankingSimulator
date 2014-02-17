@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/p310-khadamatmobilebanking-web/!svn/ver/35/trunk/src/com/sefryek/mbanking/mobileHandler
+END
+DefaultController.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/mobileHandler/DefaultController.java
+END
+AccountServiceHandler_.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/mobileHandler/AccountServiceHandler_.java
+END
+IOConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/mobileHandler/IOConstant.java
+END
+MIDletHandler_.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/mobileHandler/MIDletHandler_.java
+END
+MIDletConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/p310-khadamatmobilebanking-web/!svn/ver/35/trunk/src/com/sefryek/mbanking/mobileHandler/MIDletConstant.java
+END
+AccountBalanceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/mobileHandler/AccountBalanceService.java
+END
+AccountServiceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/p310-khadamatmobilebanking-web/!svn/ver/14/trunk/src/com/sefryek/mbanking/mobileHandler/AccountServiceHandler.java
+END

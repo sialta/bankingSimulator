@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<project default="build-trading" name="trading" basedir=".">
+
+    <property name="project.version" value="1.0"/>
+    <property name="project.name" value="trading"/>
+    <property name="src.dir" value="src"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="main.class" value="com.sefryek.mbanking.Main"/>
+
+    <property name="classes.dir" value="classes"/>
+    <property name="out.dir" value="out"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="log.dir" value="log"/>
+
+    <path id="libs.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/>
+            <include name="**/*.zip"/>
+        </fileset>
+    </path>
+
+    <target name="init">
+        <mkdir dir="${classes.dir}"/>
+        <copy todir= "${classes.dir}" overwrite="true">
+            <fileset dir="${src.dir}" includes="*.xml, *.properties"  />
+        </copy>
+    </target>
+
+    <target name="compile" depends="init" description="compiling codes">
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" debug="yes">
+            <classpath refid="libs.classpath"/>
+        </javac>
+    </target>
+
+
+    <pathconvert property="libs.project" pathsep=" ">
+    <mapper>
+      <chainedmapper>
+
+        <!-- remove absolute path -->
+        <flattenmapper />
+
+        <!-- add lib/ prefix -->
+        <globmapper from="*" to="lib/*" />
+      </chainedmapper>
+    </mapper>
+
+    <path>
+
+      <!-- lib.home contains all jar files, in several subdirectories -->
+      <fileset dir="${lib.dir}">
+        <include name="**/*.jar" />
+      </fileset>
+    </path>
+  </pathconvert>
+
+    <target name="build-trading" depends="compile" description="Build a jar file for app.">
+        <mkdir dir="${dist.dir}"/>
+        <copy todir="${dist.dir}/lib" filtering="off">
+                <!-- remove the directory hierarchy: lib contains no subdirectories -->
+                <flattenmapper />
+                <fileset dir="${lib.dir}" includes="**/*.jar" />
+        </copy>
+
+        <tstamp>
+            <format property="current.time" pattern="yyyy-MM-dd_HH-mm"/>
+        </tstamp>
+        <jar destfile="${dist.dir}/mobile-trading_${current.time}.jar" basedir="${classes.dir}" includes="com/**, org/**, *.xml, *.properties">
+            <manifest>
+                 <attribute name="Built-By" value="${user.name}" />
+                 <attribute name="Main-Class" value="${main.class}" />
+                   <attribute name="Class-Path" value="${libs.project}" />
+            </manifest>
+        </jar>
+    </target>
+
+    <!--<target name="build-zip" depends="making-jar" >
+        <tstamp>
+            <format property="current.time" pattern="yyyy-MM-dd_HH-mm"/>
+        </tstamp>
+        <zip destfile="${dist.dir}/${project.name}-v${project.version}_${current.time}.zip">
+            <zipfileset dir="${classes.dir}" includes="*.properties, *.xml"  prefix="classes"/>
+            <zipfileset dir="${dist.dir}" includes="trading.jar" prefix="lib/"/>
+            <zipfileset dir="${lib.dir}"  prefix="lib/"/>
+        </zip>
+    </target>
+
+    <target name="build-trading">
+        <antcall target="build-zip" />
+    </target>-->
+
+    <target name="clean">
+        <delete dir="${classes.dir}" />
+        <delete dir="${out.dir}" />
+        <delete dir="${dist.dir}" />
+        <delete dir="${log.dir}" />
+    </target>
+
+
+    <!-- C:\Program Files\Java\jdk1.6.0\bin>java -jar E:\projects\trading-web\trunk\src\dist\trading.jar -->
+    <!-- JAVA-HOME\bin>java -jar E:\projects\trading-web\trunk\src\dist\trading.jar -->
+
+    </project>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/p310-khadamatmobilebanking-web/!svn/ver/12/trunk/web/WEB-INF/lib
+END
+mysql-connector-java-5.1.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/p310-khadamatmobilebanking-web/!svn/ver/12/trunk/web/WEB-INF/lib/mysql-connector-java-5.1.13.jar
+END
+log4j-1.2.15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/p310-khadamatmobilebanking-web/!svn/ver/12/trunk/web/WEB-INF/lib/log4j-1.2.15.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/p310-khadamatmobilebanking-web/!svn/ver/12/trunk/web/WEB-INF/lib/servlet-api.jar
+END

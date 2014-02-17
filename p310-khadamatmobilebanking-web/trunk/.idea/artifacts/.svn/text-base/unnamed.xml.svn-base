@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <root id="archive" name="unnamed.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="newMobileBanking" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="log4j-1.2.15" />
+          <element id="library" level="project" name="servlet-api" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.13" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="newMobileBanking/web/Web" />
+    </root>
+  </artifact>
+</component>
